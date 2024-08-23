@@ -1,5 +1,5 @@
 'use client'
-import { Box, Button, Stack, TextField } from '@mui/material'
+import { Box, Button, Stack, TextField, Typography } from '@mui/material'
 import { useState } from 'react'
 
 export default function Home() {
@@ -48,64 +48,110 @@ export default function Home() {
   }
 
   return (
-    <Box
-      width="100vw"
-      height="100vh"
-      display="flex"
-      flexDirection="column"
-      justifyContent="center"
-      alignItems="center"
-    >
-      <Stack
-        direction={'column'}
-        width="500px"
-        height="700px"
-        border="1px solid black"
-        p={2}
-        spacing={3}
+    <Box width="100vw" height="100vh" bgcolor="#D3D9D4" display="flex" flexDirection="column">
+      {/* Header */}
+      <Box width="100vw" bgcolor="#212A31" p={2}>
+        <Typography variant="h4" color="white" align="Center">
+          RateWizard
+        </Typography>
+      </Box>
+
+      <Box
+        width="100vw"
+        display="flex"
+        justifyContent="center"
+        alignItems="center"
+        flexGrow={1}
       >
         <Stack
           direction={'column'}
-          spacing={2}
-          flexGrow={1}
-          overflow="auto"
-          maxHeight="100%"
+          width="500px"
+          height="700px"
+          borderRadius={7}
+          bgcolor="#2E3944"
+          p={2}
+          spacing={3}
         >
-          {messages.map((message, index) => (
-            <Box
-              key={index}
-              display="flex"
-              justifyContent={
-                message.role === 'assistant' ? 'flex-start' : 'flex-end'
-              }
-            >
+          <Stack
+            direction={'column'}
+            spacing={2}
+            flexGrow={1}
+            overflow="auto"
+            maxHeight="100%"
+          >
+            {messages.map((message, index) => (
               <Box
-                bgcolor={
-                  message.role === 'assistant'
-                    ? 'primary.main'
-                    : 'secondary.main'
+                key={index}
+                display="flex"
+                justifyContent={
+                  message.role === 'assistant' ? 'flex-start' : 'flex-end'
                 }
-                color="white"
-                borderRadius={16}
-                p={3}
               >
-                {message.content}
+                <Box
+                  bgcolor={
+                    message.role === 'assistant' ? '#124E66' : '#748D92'
+                  }
+                  color="white"
+                  borderRadius={7}
+                  p={3}
+                >
+                  {message.content}
+                </Box>
               </Box>
-            </Box>
-          ))}
-        </Stack>
-        <Stack direction={'row'} spacing={2}>
+            ))}
+          </Stack>
+          <Stack direction={'row'} spacing={2}>
           <TextField
             label="Message"
             fullWidth
             value={message}
             onChange={(e) => setMessage(e.target.value)}
+            variant="outlined"
+            InputProps={{
+              style: {
+                backgroundColor: '#748D92',
+                color: 'white',
+                borderRadius: 14,
+                outline: 'none', 
+                border: 'none', 
+              },
+            }}
+            InputLabelProps={{
+              style: {
+                color: 'white',
+              },
+            }}
+            sx={{
+              '& .MuiOutlinedInput-root': {
+                '& fieldset': {
+                  borderColor: 'transparent', 
+                },
+                '&:hover fieldset': {
+                  borderColor: 'transparent', 
+                },
+                '&.Mui-focused fieldset': {
+                  borderColor: 'transparent',
+                },
+              },
+            }}
           />
-          <Button variant="contained" onClick={sendMessage}>
-            Send
-          </Button>
+            <Button
+              variant="contained"
+              onClick={sendMessage}
+              sx={{
+                bgcolor: '#124E66',
+                color: 'white',
+                borderRadius: 4,
+                '&:hover': {
+                  bgcolor: '#0A354D',
+                },
+              }}
+            >
+              Send
+            </Button>
+          </Stack>
         </Stack>
-      </Stack>
+      </Box>
     </Box>
   )
 }

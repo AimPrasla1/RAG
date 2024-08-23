@@ -54,7 +54,7 @@ export async function POST(req) {
     });
     const index = pc.index('bag').namespace('ns1');
     const openai = new OpenAI({
-        apiKey: process.env.OPENAI_API_KEY,  // Ensure API key is passed
+        apiKey: process.env.OPENAI_API_KEY, 
     });
 
     const text = data[data.length - 1].content;
@@ -64,12 +64,12 @@ export async function POST(req) {
     }
 
     const embedding = await openai.embeddings.create({
-        model: 'text-embedding-ada-002', // Ensure the model name is correct
+        model: 'text-embedding-ada-002', 
         input: text,
     });
 
     const results = await index.query({
-        topK: 3, // Ensure correct casing of 'topK'
+        topK: 3, 
         includeMetadata: true,
         vector: embedding.data[0].embedding,
     });
