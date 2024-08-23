@@ -1,0 +1,125 @@
+{
+    "reviews": [
+      {
+        "professor": "Dr. John Smith",
+        "subject": "Introduction to Psychology",
+        "stars": 5,
+        "review": "Dr. Smith is an amazing professor! His lectures are engaging and he truly cares about his students."
+      },
+      {
+        "professor": "Dr. Emily Johnson",
+        "subject": "Calculus I",
+        "stars": 3,
+        "review": "Dr. Johnson knows her material, but her lectures can be a bit hard to follow at times."
+      },
+      {
+        "professor": "Dr. Michael Brown",
+        "subject": "Organic Chemistry",
+        "stars": 4,
+        "review": "Challenging course, but Dr. Brown is very helpful and provides great resources."
+      },
+      {
+        "professor": "Dr. Linda Williams",
+        "subject": "World History",
+        "stars": 2,
+        "review": "Dr. Williams is knowledgeable, but her lectures are very monotonous and hard to stay awake through."
+      },
+      {
+        "professor": "Dr. James Jones",
+        "subject": "Introduction to Programming",
+        "stars": 5,
+        "review": "Fantastic professor! Dr. Jones makes coding fun and understandable."
+      },
+      {
+        "professor": "Dr. Patricia Garcia",
+        "subject": "Sociology 101",
+        "stars": 4,
+        "review": "Dr. Garcia is very approachable and her classes are insightful, though the workload can be heavy."
+      },
+      {
+        "professor": "Dr. Robert Miller",
+        "subject": "Physics I",
+        "stars": 3,
+        "review": "Dr. Miller's lectures are clear, but his exams are tough. Be prepared to study a lot."
+      },
+      {
+        "professor": "Dr. Mary Martinez",
+        "subject": "English Literature",
+        "stars": 5,
+        "review": "Dr. Martinez is passionate about literature and inspires her students to think critically."
+      },
+      {
+        "professor": "Dr. David Anderson",
+        "subject": "Biology 101",
+        "stars": 4,
+        "review": "Great professor! Dr. Anderson explains complex topics in a simple and clear way."
+      },
+      {
+        "professor": "Dr. Susan Lee",
+        "subject": "Macroeconomics",
+        "stars": 2,
+        "review": "The course material is interesting, but Dr. Lee's teaching style is a bit dry."
+      },
+      {
+        "professor": "Dr. Charles Thomas",
+        "subject": "Philosophy 101",
+        "stars": 5,
+        "review": "Dr. Thomas is a brilliant philosopher and his classes are mind-opening."
+      },
+      {
+        "professor": "Dr. Karen White",
+        "subject": "Art History",
+        "stars": 3,
+        "review": "Dr. White is very knowledgeable, but her lectures can be a bit disorganized."
+      },
+      {
+        "professor": "Dr. Christopher Harris",
+        "subject": "Statistics",
+        "stars": 4,
+        "review": "Dr. Harris makes a difficult subject accessible. He’s always willing to help outside of class."
+      },
+      {
+        "professor": "Dr. Barbara Clark",
+        "subject": "Chemistry II",
+        "stars": 5,
+        "review": "Dr. Clark is an excellent professor! Her passion for chemistry is contagious."
+      },
+      {
+        "professor": "Dr. Paul Robinson",
+        "subject": "American Government",
+        "stars": 2,
+        "review": "The material is interesting, but Dr. Robinson's lectures can be overly complex."
+      },
+      {
+        "professor": "Dr. Jennifer Lewis",
+        "subject": "Creative Writing",
+        "stars": 5,
+        "review": "Dr. Lewis encourages creativity and provides great feedback on assignments."
+      },
+      {
+        "professor": "Dr. Steven Walker",
+        "subject": "Microeconomics",
+        "stars": 3,
+        "review": "Dr. Walker knows his stuff, but his teaching style isn’t very engaging."
+      },
+      {
+        "professor": "Dr. Angela Hall",
+        "subject": "Human Anatomy",
+        "stars": 4,
+        "review": "Dr. Hall is very thorough and her exams are fair. A lot of material to cover though."
+      },
+      {
+        "professor": "Dr. Kevin Young",
+        "subject": "Advanced Calculus",
+        "stars": 5,
+        "review": "Dr. Young is an exceptional professor! He makes difficult topics easy to understand."
+      },
+      {
+        "professor": "Dr. Nancy King",
+        "subject": "Political Science",
+        "stars": 4,
+        "review": "Dr. King is a great lecturer and makes the material relevant to current events."
+      }
+    ]
+  }
+  
